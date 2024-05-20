@@ -1,0 +1,60 @@
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (hotfix)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (hotfix)
+$ git add .
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (hotfix)
+$ git commit -m "commit for hotfix"
+[hotfix b5590fd] commit for hotfix
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file_hotfix.txt
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (hotfix)
+$ git push origing hotfix
+fatal: 'origing' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (hotfix)
+$ git push origin hotfix
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 283 bytes | 283.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'hotfix' on GitHub by visiting:
+remote:      https://github.com/TruptiKondhare/Git_assignment/pull/new/hotfix
+remote:
+To https://github.com/TruptiKondhare/Git_assignment.git
+ * [new branch]      hotfix -> hotfix
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (hotfix)
+$ git checkout main
+Switched to branch 'main'
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (main)
+$ git merge hotfix
+Updating ebde510..b5590fd
+Fast-forward
+ file1.txt       | 0
+ file_hotfix.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.txt
+ create mode 100644 file_hotfix.txt
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (main)
+$ git merge feature
+Already up to date.
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (main)
+$

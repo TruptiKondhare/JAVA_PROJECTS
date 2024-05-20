@@ -1,0 +1,29 @@
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (main)
+$ git branch feature
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (main)
+$ git cheakout feature
+git: 'cheakout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (feature)
+$ git add "file1"
+fatal: pathspec 'file1' did not match any files
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (feature)
+$ ^C
+
+Administrator@DESKTOP-TIC5DM4 MINGW64 ~/Desktop/Git (feature)
+$
