@@ -1,0 +1,11 @@
+apiVesrsion: v1
+kinf: Pod
+metadata:
+ name: redis
+ lables:
+  app: redis-app
+spec:
+ containers:
+ - name: redis-image
+   image: redis
+
